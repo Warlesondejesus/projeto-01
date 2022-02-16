@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+
+
+header {
+    background-color: rgba(51, 55, 64, 1);
+    grid-area: header;
+}
+
+main {
+    display: flex;
+    width: 100vw;
+    flex-basis: auto;
+    height: 300px;  /* esse ajuste pode ser usado nos outros mains */
+    margin: 0%;
+}
+.box1 {  /* container do main */
+    /*display: flex;
+    flex-wrap: wrap;*/
+    display: grid; /*no grid display grid e no flex, display felz*/
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas: 'box1 contatos';
+    min-height: 100vh;
+}
+
+.map {  
+    width: 50vw;
+    text-align: left;
+    grid-area: box1;
+    color: black;
+    font-size: 30px;
+    background-size: cover;
+    text-align: center;
+    padding: 30px;
+}
+.contact {
+    grid-area: contatos;
+    display: flex; 
+    margin: 0;
+    background-size: cover;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.contato-h2{
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+}
+#name{
+    margin: 0px 50px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+#textbox{
+    margin: 10px 50px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+button{
+    color: white;
+    margin: 0px;
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: rgb(255, 115, 0);
+}
+
+

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    left: 5.39%;
+    right: 62.91%;
+    top: 3.88%;
+    bottom: 93.53%;
+    z-index: 1;
+    font-family: 'Hind', sans-serif;
+    font-size: 1.5em;
+	font-weight: 400;
+    width: 50%;
+
+}
+
+.a_header {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.88);
+    
+}
+
+header li + li{
+    margin-left: 50px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind', sans-serif;
+    
+}
+
+.carousel-inner > .carousel-item > img {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .carrossel {
+    width: 100%;
+    position: relative;
+     
+  }
+
+footer {
+    left: 0px;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-color: blue;
+    
+}
+
+.contatos {
+    margin-top: 20px;
+    padding-left: 0%;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    grid-area: menufoot;
+    list-style: none;
+}
+
+.menufoot {
+    margin-bottom: 24.56px;
+    padding-left: 0%;
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: menufoot;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.n-tel {
+    grid-area: n-tel;
+    text-align: left;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+}
+.email {
+    margin-top: 5px;
+    grid-area: email;
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 1);
+}
+
+.a1{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    
+}

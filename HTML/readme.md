@@ -17,9 +17,6 @@ background: #333740;
 
 
 * Fundo do carrossel
-height: 348px;
-width: 612px
-background: #333740;
 
 * Menu
 height: 18px;

@@ -1,6 +1,43 @@
-:root{
-    /* aqui deevemos criar todas as variaveis de cores, fontes, e tamanhos. 
-    para criar a variavél devemos declarar --nomedavariavel, depois é so colocar
-     "var(nomedavariavel)" onde ela deve ser inserida */
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+
+
+header {
+    background-color: rgba(51, 55, 64, 1);
+    grid-area: header;
 }
+
+main {
+    display: flex;
+    width: 100vw;
+    flex-basis: auto;
+    height: 300px;  /* esse ajuste pode ser usado nos outros mains */
+    margin: 0%;
+}
+.box1 {  /* container do main */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-2 {  /*  item do texto sobre  */
+    width: 50vw;
+    text-align: left;
+    color: black;
+    font-size: 30px;
+    /* font-family: sans-serif; */
+    padding: 30px;
+}
+
+.item-1 {  /* item da imagem do sobre  */
+    width: 50vw;
+    background-image: url(../SRC/imgBoxBig-2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p {  /* item do conteúdo do sobre */
+    width: auto;
+    font-size: small;
+}
+
+
 
