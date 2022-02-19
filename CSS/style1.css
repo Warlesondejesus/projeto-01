@@ -2,17 +2,17 @@
 
 
 
-header {
+/* header {
     background-color: rgba(51, 55, 64, 1);
     grid-area: header;
-}
+} */
 
 main {
-    display: flex;
+    display: flex;;
     width: 100vw;
     flex-basis: auto;
-    height: 300px;  /* esse ajuste pode ser usado nos outros mains */
-    margin: 0%;
+    height: 500px;  /* esse ajuste pode ser usado nos outros mains */
+    margin: 0;
 }
 .box1 {  /* container do main */
     display: flex;
@@ -37,6 +37,11 @@ main {
 p {  /* item do conteúdo do sobre */
     width: auto;
     font-size: small;
+}
+
+h1 {
+font-size: 50px;
+
 }
 
 

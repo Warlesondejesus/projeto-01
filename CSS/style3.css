@@ -1,70 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
 
 
-
-header {
-    background-color: rgba(51, 55, 64, 1);
-    grid-area: header;
-}
-
 main {
-    display: flex;
-    width: 100vw;
-    flex-basis: auto;
-    height: 300px;  /* esse ajuste pode ser usado nos outros mains */
-    margin: 0%;
+    display: grid;
+    width: 5fr;
+    height: 600px;  /* esse ajuste pode ser usado nos outros mains */
+    margin: 0;
+    grid-template-rows: 5fr;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: 'map contact';
 }
-.box1 {  /* container do main */
-    /*display: flex;
-    flex-wrap: wrap;*/
-    display: grid; /*no grid display grid e no flex, display felz*/
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-areas: 'box1 contatos';
-    min-height: 100vh;
+  
+.map {  
+    grid-area: map;
+    display: flex;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
 }
 
-.map {  
-    width: 50vw;
-    text-align: left;
-    grid-area: box1;
-    color: black;
-    font-size: 30px;
-    background-size: cover;
+.contact{
     text-align: center;
-    padding: 30px;
-}
-.contact {
-    grid-area: contatos;
+    grid-area: contact;
     display: flex; 
     margin: 0;
-    background-size: cover;
     flex-direction: column;
-    padding: 0px;
+    padding: 5vw 0vw 0vw 0vw;
 }
+.b-contact{
+    padding: 0vw 0vw 0vw 0vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    margin-top: 0
+    
+}
+h2{
+    word-wrap: break-word;
 
-.contato-h2{
-    margin: 0;
-    padding: 10px;
-    font-size: 20px;
+}
+.b-name{
+    padding: 0vw 0vw 0vw 0vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    margin-top: 0;
 }
 #name{
-    margin: 0px 50px;
+    display: flex;
+    align-items: center;
+	justify-content: center;
+    margin: 0 ;
+    width: 85%;
+    height: 45%;
+    margin-top: 60px;
+    border-radius: 16px;
     border: 2px solid gray;
-    border-radius: 5px;
+}
+.b-textbox{
+    padding: 0vw 0vw 0vw 0vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    margin-top: 8%;
 }
 #textbox{
-    margin: 10px 50px;
+    display: flex;
+    margin: 0;/*0 auto*/;
+    width: 85%;
+    height: 145%;
+    border-radius: 16px;
     border: 2px solid gray;
-    border-radius: 10px;
 }
-button{
+.b-box{
+	padding: 0vw 0vw 0vw 0vw;
+	display: flex;
+    margin-top: 7%;
+	align-items: center;
+	justify-content: center;
+    
+}
+.button{
+    width: 55%;
+    height: 80%;
+    margin-top: 10px;
+    background-color: coral;
+    font-size: x-large;
     color: white;
-    margin: 0px;
-    height: 40px;
-    width: 300px;
-    border-radius: 20px;
-    background-color: rgb(255, 115, 0);
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
 }
+
 
 

@@ -3,6 +3,7 @@
 .nav {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     position: absolute;
     left: 5.39%;
     right: 62.91%;
@@ -12,8 +13,14 @@
     font-family: 'Hind', sans-serif;
     font-size: 1.5em;
 	font-weight: 400;
-    width: 50%;
+    width: 70%;
 
+}
+
+.logo{
+    margin-top: 0;
+    height: 40px;
+    width: 100px;
 }
 
 .a_header {
@@ -46,13 +53,13 @@ body {
   }
 
 footer {
+    height: 111px;
     left: 0px;
     grid-area: footer;
     display: flex;
     justify-content: space-around;
-    flex-direction: column;
-    font-family: sans-serif;
-    background-color: blue;
+    flex-direction: column; 
+    font-size: 1.3em;
     
 }
 
@@ -61,9 +68,10 @@ footer {
     padding-left: 0%;
     margin-bottom: 0px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     grid-area: menufoot;
     list-style: none;
+    
 }
 
 .menufoot {
@@ -74,15 +82,17 @@ footer {
     grid-area: menufoot;
     list-style: none;
     text-decoration: none;
-    
+       
 }
 
 .n-tel {
     grid-area: n-tel;
     text-align: left;
     font-weight: bold;
+    font-size: 1.4em; 
     color: rgba(0, 0, 0, 1);
 }
+
 .email {
     margin-top: 5px;
     grid-area: email;
@@ -93,5 +103,175 @@ footer {
 .a1{
     text-decoration: none;
     color: rgba(0, 0, 0, 1);
-    
+        
 }
+
+@media (max-width: 500px){
+
+    .nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        z-index: 1;
+        font-family: 'Hind', sans-serif;
+        font-size: 1em;
+	    font-weight: 400;
+        width: 90%;
+        
+    }
+
+    .logo{
+        margin-top: 0;
+        height: 30px;
+        width: 70px;
+    }
+
+    header li + li{
+        margin-left: 20px;
+    }
+    
+    .carousel-inner > .carousel-item > img {
+        height: 40vh;
+        width: 100%;
+      }
+}
+
+@media (max-width: 710px){
+    .nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        /* left: 5.39%;
+        right: 62.91%;
+        top: 3.88%;
+        bottom: 93.53%; */
+        z-index: 1;
+        font-family: 'Hind', sans-serif;
+        font-size: 1.2em;
+	    font-weight: 400;
+        width: 90%;
+        
+    }
+
+    .logo{
+        margin-top: 0;
+        height: 20px;
+        width: 50px;
+    }
+
+    header li + li{
+        margin-left: 20px;
+    }
+    
+    .carousel-inner > .carousel-item > img {
+        height: 40vh;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px){
+        .nav {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: absolute;
+            /* left: 5.39%;
+            right: 62.91%;
+            top: 3.88%;
+            bottom: 93.53%; */
+            z-index: 1;
+            font-family: 'Hind', sans-serif;
+            font-size: 1.2em;
+            font-weight: 400;
+            width: 90%;
+            
+        }
+    
+        .logo{
+            margin-top: 0;
+            height: 40px;
+            width: 100px;
+        }
+    
+        header li + li{
+            margin-left: 40px;
+        }
+        
+        .carousel-inner > .carousel-item > img {
+            height: 60vh;
+            width: 100%;
+          }
+    
+    
+
+
+}
+
+
+
+/* res-footer */
+
+@media (max-width: 700px){
+	footer {
+		flex-direction: column;
+        padding: 0;
+        margin: 0;
+        font-size: 1.2em;
+	}
+}
+
+@media (max-width: 500px){
+	footer {
+		flex-direction: column;
+        padding: 0;
+        margin: 0;
+        font-size: 1em;
+	}
+    
+    .contatos {
+        margin-top: 0;
+        flex-wrap: wrap;
+        grid-area: menufoot;
+        list-style: none;
+    }
+    
+    .menufoot {
+        flex-wrap: wrap;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        grid-area: menufoot;
+        list-style: none;
+        text-decoration: none;
+        
+    }
+    
+    .n-tel {
+        margin-bottom: 0px;
+        flex-wrap: wrap;
+        grid-area: n-tel;
+        font-weight: bold;
+        font-size: em;
+        color: rgba(0, 0, 0, 1);
+    }
+    .email {
+        flex-wrap: wrap;
+        grid-area: email;
+        text-decoration: underline;
+        font-size: 1.em;
+        color: rgba(0, 0, 0, 1);
+    }
+    
+    .a1{
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+        text-decoration: none;
+        font-size: 1em;
+        color: rgba(0, 0, 0, 1);
+        
+    }
+	
+} 
+
+ 

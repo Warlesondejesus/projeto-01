@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
 
-body {
-margin: 0;
+/* body {
+ 	margin: 0;
 	padding: 0;
 	font-family: 'Hind', sans-serif;
 	box-sizing: border-box;
 	display: grid;
 	grid-template-rows: 3fr auto 1fr;
 	grid-template-areas: 'header' 'main' 'footer';
-}
+}  */
 
 a {
 	text-decoration: none;
@@ -20,7 +20,7 @@ main {
 	padding: 0vw 0 3vw 0;
 	min-height: 60vw;
     max-width: 100%;
-	background-color: cyan;
+	background-color: white;
 	display: grid;
 	grid-template-rows: auto;
 	grid-template-areas: 'format' 'caixas';
@@ -32,7 +32,7 @@ main {
 }
 
 .m2box1 h2 {
-	font-size: 2.5em;
+	font-size: 2em;
 	font-weight: 700;
 	line-height: 4vw;
 	padding-top: 4vw;
@@ -44,7 +44,7 @@ main {
 	line-height: 3vw;
 	font-weight: 600;
 	margin: 0;
-	padding: 0vw 25vw 1vw 25vw;
+	padding: 0vw 25vw 0vw 25vw;
 	text-indent: 0;
 }
 
@@ -53,7 +53,7 @@ main {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding: 2vh 3vw 2vh 3vw;
+	padding: 1vh 3vw 2vh 3vw;
 }
 
 div[id^="card"] {
@@ -123,13 +123,18 @@ div[id$=img] {
 	margin: 0;
 }
 
-.ctxt p, ul {
+.ctxt p {
 	font-size: 1.5vw;
 	padding: 0 0 1vw 2vw;
 	margin: 0;
 	font-weight: 600;
 }
-
+.ctxt ul {
+	font-size: 1.5vw;
+	padding: 0 0 1vw 2vw;
+	margin: 0;
+	font-weight: 600;
+}
 .p1xt+.h1xt {
 	font-size: 1.5vw;
 	padding: 0 0 1vw 2vw;
@@ -210,20 +215,36 @@ div[id$=img] {
 	border: none;
 }
 
-/* @media (max-width: 700px){
+@media (max-width: 700px){
 	#cbtn {
 		width: 8em;
 		height: 1.5em;
 		font-size: 0.8em;
 	}
 	.m2box1 p {
-		font-size: 0.8em;
+		font-size: 1em;
 		line-height: 3vw;
 		padding: 1vh 10vh 1vh 10vh;
 
 	}
 }
  @media (max-width: 500px){
+
+	.m2box1 h2 {
+		font-size: 1.5em;
+		font-weight: 700;
+		line-height: 100%;
+		padding: 5vh 10vw 3vh 10vw;
+		margin: 0;
+	}
+	.m2box1 p {
+		font-size: 1em;
+		line-height: 100%;
+		font-weight: 600;
+		margin: 0;
+		padding: 0vw 7vw 2vh 7vw;
+		text-indent: 0;
+	}
 	.m2box2 {
 		justify-content: space-around;
 		padding: 2vh 3vw 2vh 3vw;
@@ -233,8 +254,11 @@ div[id$=img] {
 		height: min-content;
 		width: 155px;
 		height: 232px;
-		margin: 1vh;
+		margin: 2vh 0vh 2vh 0vh;
 		grid-template-rows: auto;
+	}
+	#card2, #card3 {
+		margin-left: 0;
 	}
 	.ctxt {
 		min-height: 141px;
@@ -248,12 +272,16 @@ div[id$=img] {
 	}
 	.ctxt p{
 		font-size: 0.7em;
+		
 	}
-	.l1xt, .l2xt, .l3xt {
+	.ctxt ul{
 		font-size: 0.6em;
 	}
 	#cbttm {
 		padding: 1vh 0vw 2vh 0vw;
 	} 
+	.h3xt+.p3xt {
+		font-size: 0.7em;
+	}
 	
-} */
+}
